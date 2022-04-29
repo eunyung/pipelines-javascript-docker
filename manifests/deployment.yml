@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: 0429testjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 0429testjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: 0429testjavascriptdocker 
+    spec:
+      containers:
+        - name: 0429testjavascriptdocker 
+          image: 0429test2containerregistry.azurecr.io/0429testjavascriptdocker
+          ports:
+          - containerPort: 8080
