@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: 0429testjavascriptdocker
+    name: eunyung0429testjavascriptdocker
 spec:
     type: LoadBalancer
     ports:
